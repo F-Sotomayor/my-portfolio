@@ -81,9 +81,7 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
-  flex: 1;
   height: 100%;
-
   .introductionContainer {
     display: flex;
     flex-direction: column;
@@ -291,5 +289,71 @@ body {
   }
   87% {
     box-shadow: 0.2em -0.2em 0 0 currentcolor;
+  }
+}
+
+@media (min-width: 1600px) {
+  .headerContainer {
+    .navigationItemsSide {
+      a {
+        font-size: 20px;
+      }
+      button {
+        height: 55px;
+        width: 120px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .introductionSplitter {
+    .introductionContainer {
+      .myName {
+        font-size: 32px;
+        letter-spacing: 2px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+      .titleName {
+        font-size: 96px;
+        margin-bottom: 24px;
+      }
+      .titleProfession {
+        font-size: 64px;
+        margin-bottom: 30px;
+      }
+      .description {
+        width: 800px;
+        line-height: 40px;
+        font-size: 24px;
+        margin-bottom: 24px;
+      }
+      button {
+        height: 80px;
+        width: 350px;
+        border-radius: 8px;
+        padding: 0.75rem 1rem;
+        letter-spacing: 1px;
+        margin-top: 40px;
+        font-size: 20px;
+      }
+    }
+  }
+  .floatingSidePanels {
+    .floatingEmailContainer {
+      span {
+        font-size: 22px;
+      }
+    }
+    .socialMediaContainer {
+      a {
+        margin-top: 18px;
+        margin-bottom: 18px;
+        img {
+          width: 48px;
+          height: 48px;
+        }
+      }
+    }
   }
 }
