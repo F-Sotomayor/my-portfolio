@@ -1,3 +1,4 @@
+import AboutMe from "@/components/stateless/AboutMe/AboutMe";
 import Header from "@/components/stateless/Header/Header";
 import Introduction from "@/components/stateless/Introduction/Introduction";
 
@@ -8,7 +9,9 @@ export default function Home() {
         <Header />
         <Introduction />
       </div>
-      <div className="secondPage"></div>
+      <div className="secondPage">
+        <AboutMe />
+      </div>
     </>
   );
 }

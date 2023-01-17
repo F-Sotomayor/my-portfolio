@@ -15,7 +15,7 @@ export default function Header() {
         </div>
         <div className="navigationItemsSide">
           <NavigationItem
-            navigationItemURL="#"
+            navigationItemURL="#about"
             navigationItemName="About"
             animationDelay={0.15}
           />
