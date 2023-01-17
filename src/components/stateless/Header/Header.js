@@ -16,27 +16,27 @@ export default function Header() {
           <NavigationItem
             navigationItemURL="#"
             navigationItemName="About"
-            animationDelay={0.25}
+            animationDelay={0.15}
           />
           <NavigationItem
             navigationItemURL="#"
             navigationItemName="Experience"
-            animationDelay={0.5}
+            animationDelay={0.35}
           />
           <NavigationItem
             navigationItemURL="#"
             navigationItemName="Work"
-            animationDelay={0.75}
+            animationDelay={0.55}
           />
           <NavigationItem
             navigationItemURL="#"
             navigationItemName="Contact"
-            animationDelay={1}
+            animationDelay={0.75}
           />
           <motion.div
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.2, ease: "easeIn", delay: 1 }}
+            transition={{ duration: 0.7, ease: "easeIn", delay: 0.9 }}
           >
             <button>Resume</button>
           </motion.div>

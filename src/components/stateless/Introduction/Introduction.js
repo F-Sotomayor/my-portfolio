@@ -5,7 +5,7 @@ export default function Introduction() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1, delay: 2 }}
+      transition={{ duration: 0.9, delay: 2 }}
     >
       <div className="introductionContainer">
         <div className="myName">Hi, my name is</div>

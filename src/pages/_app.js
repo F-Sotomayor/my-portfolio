@@ -1,7 +1,7 @@
 import "../styles/global.scss";
 import { Roboto } from "@next/font/google";
 import { useState } from "react";
-import Loading from "./loading";
+import Loading from "../components/stateless/Spinner/loading";
 
 const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 

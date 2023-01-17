@@ -11,7 +11,7 @@ export default function NavigationItem({
       initial={{ opacity: 0, y: -100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
-        duration: 1.2,
+        duration: 0.7,
         ease: "easeIn",
         delay: animationDelay,
       }}
