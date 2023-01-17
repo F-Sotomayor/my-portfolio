@@ -8,7 +8,7 @@ export default function Introduction() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.9, delay: 2 }}
+        transition={{ duration: 0.9, delay: 1.5 }}
         style={{ height: "90%" }}
       >
         <div className="introductionSplitter">
