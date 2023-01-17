@@ -7,6 +7,7 @@ export default function Header() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
+      style={{ height: "10%" }}
     >
       <header className="headerContainer">
         <div className="iconSide">

@@ -6,14 +6,6 @@
 
 body {
   background-color: #0a192f;
-  max-width: 1400px;
-  margin: auto;
-}
-
-// First Page
-
-.firstPage {
-  height: 95vh;
 }
 
 // ScrollDownIcon.js
@@ -32,6 +24,10 @@ body {
   }
 }
 
+.firstPage {
+  height: 100vh;
+}
+
 // Header.js
 
 .headerContainer {
@@ -39,9 +35,8 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 10vh;
+  height: 100%;
   color: white;
-  margin-top: 12px;
   .iconSide {
     display: flex;
     flex: 0.5;
@@ -82,95 +77,137 @@ body {
 
 // Introduction.js
 
-.introductionContainer {
+.introductionSplitter {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 70%;
-  height: 70vh;
-  color: white;
-  margin: auto;
-  margin-top: 60px;
-  .myName {
-    color: #64ffda;
-    font-size: 16px;
-    letter-spacing: 2px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .titleName {
-    font-size: 48px;
-    font-weight: bold;
-    color: #ccd6f6;
-    margin-bottom: 12px;
-  }
-  .titleProfession {
-    font-size: 42px;
-    font-weight: bolder;
-    color: #8892b0;
-    margin-bottom: 24px;
-  }
-  .description {
-    color: #8892b0;
-    width: 500px;
-    line-height: 25px;
-    margin-bottom: 24px;
-    span {
-      color: #64ffda;
-    }
-  }
-  button {
+  align-items: flex-end;
+  justify-content: space-around;
+  flex: 1;
+  height: 100%;
+
+  .introductionContainer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    color: #64ffda;
-    height: 45px;
-    width: 225px;
-    background-color: #0a192f;
-    border: 1px solid #64ffda;
-    border-radius: 4px;
-    cursor: pointer;
-    padding: 0.75rem 1rem;
-    letter-spacing: 1px;
-    margin-top: 40px;
-    &:hover {
-      background-color: #00ffc320;
-      transition: 0.5s;
+    align-items: flex-start;
+    width: 70%;
+    color: white;
+    height: 100%;
+    .myName {
+      color: #64ffda;
+      font-size: 16px;
+      letter-spacing: 2px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .titleName {
+      font-size: 48px;
+      font-weight: bold;
+      color: #ccd6f6;
+      margin-bottom: 12px;
+    }
+    .titleProfession {
+      font-size: 42px;
+      font-weight: bolder;
+      color: #8892b0;
+      margin-bottom: 24px;
+    }
+    .description {
+      color: #8892b0;
+      width: 500px;
+      line-height: 25px;
+      margin-bottom: 24px;
+      span {
+        color: #64ffda;
+      }
+    }
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #64ffda;
+      height: 45px;
+      width: 225px;
+      background-color: #0a192f;
+      border: 1px solid #64ffda;
+      border-radius: 4px;
+      cursor: pointer;
+      padding: 0.75rem 1rem;
+      letter-spacing: 1px;
+      margin-top: 40px;
+      &:hover {
+        background-color: #00ffc320;
+        transition: 0.5s;
+      }
     }
   }
 }
 
-// FloatingSocialMediaIcons.js
-
-.socialMediaContainer {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  height: 20%;
-  top: 40%;
-  left: 0;
-  .socialIcon {
-    width: 40px;
-    height: 40px;
-    &:hover {
-      scale: 1.1;
-      transition: 0.5s;
+.floatingSidePanels {
+  height: 100%;
+  .floatingEmailContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: white;
+    justify-content: center;
+    &::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 130px;
+      margin: 0px auto;
+      background-color: #a8b2d1;
+    }
+    .emptyBox {
+      display: flex;
+      flex: 0.5;
+    }
+    .emailBox {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      flex: 0.5;
+      margin-bottom: 20px;
+    }
+    span {
+      font-size: 12px;
+      letter-spacing: 1px;
+      writing-mode: vertical-lr;
+      color: #a8b2d1;
     }
   }
-  .github {
-    background-image: url("../../public/github2.jpg");
-    background-position: center;
-    background-size: cover;
-  }
-  .linkedin {
-    background-image: url("../../public/2.png");
-    background-position: center;
-    background-size: cover;
-  }
-  .gmail {
-    background-image: url("../../public/gmail2.jpg");
-    background-position: center;
-    background-size: cover;
+  .socialMediaContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    &::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 130px;
+      margin: 0px auto;
+      background-color: #a8b2d1;
+    }
+    .emptyBox {
+      display: flex;
+      flex: 0.5;
+    }
+    .iconsBox {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      flex: 0.5;
+      margin-bottom: 20px;
+    }
+    a {
+      margin-top: 12px;
+      margin-bottom: 12px;
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
   }
 }
 

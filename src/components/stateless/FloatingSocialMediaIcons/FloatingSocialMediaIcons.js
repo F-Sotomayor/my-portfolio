@@ -6,17 +6,21 @@ export default function FloatingSocialMediaIcons() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay: 2.5 }}
+      className="floatingSidePanels"
     >
       <div className="socialMediaContainer">
-        <a href="https://github.com/F-Sotomayor">
-          <div className="socialIcon github" />
-        </a>
-        <a href="https://www.linkedin.com/in/facusotomayor/">
-          <div className="socialIcon linkedin" />
-        </a>
-        <a href="mailto:facundosotomayor95@gmail.com?Subject=Contact%20from%20portfolio">
-          <div className="socialIcon gmail" />
-        </a>
+        <div className="emptyBox"></div>
+        <div className="iconsBox">
+          <a href="https://github.com/F-Sotomayor">
+            <img src="https://icongr.am/material/github.svg?size=128&color=a8b2d1" />
+          </a>
+          <a href="https://www.linkedin.com/in/facusotomayor/">
+            <img src="https://icongr.am/material/linkedin.svg?size=128&color=a8b2d1" />
+          </a>
+          <a href="mailto:facundosotomayor95@gmail.com?Subject=Contact%20from%20portfolio">
+            <img src="https://icongr.am/material/gmail.svg?size=128&color=a8b2d1" />
+          </a>
+        </div>
       </div>
     </motion.div>
   );

@@ -6,6 +6,7 @@ export default function ScrollDownIcon() {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, delay: 3 }}
+      style={{ height: "5%" }}
     >
       <div className="scrollDownIcon">
         <img
