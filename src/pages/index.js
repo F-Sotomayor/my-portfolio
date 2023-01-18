@@ -1,4 +1,3 @@
-import AboutMe from "@/components/stateless/AboutMe/AboutMe";
 import Header from "@/components/stateless/Header/Header";
 import Introduction from "@/components/stateless/Introduction/Introduction";
 
@@ -10,7 +9,7 @@ export default function Home() {
         <Introduction />
       </div>
       <div className="secondPage">
-        <AboutMe />
+        <div className="workExperience">Work Experience</div>
       </div>
     </>
   );
